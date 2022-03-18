@@ -1,0 +1,21 @@
+<%- include('header'); -%>
+
+
+
+<% for (var i=0; i<homeStartingContent.length; i++ ){%>
+  <h2> <%= homeStartingContent[i].title %> </h2>
+
+  <p name="element" value="id"> <%= homeStartingContent[i].content.slice(0,100) %>...  <a href="/content?id=<%= homeStartingContent[i].Itemid %>" data-elementid="somethong">Read More</a>
+
+   </p>
+
+      <%}%>
+
+
+
+
+
+
+
+
+<%- include('footer'); -%>
